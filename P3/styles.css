@@ -1,0 +1,51 @@
+body {
+	width: 770px;
+	font-family: Arial;
+	font-size: 1.5em;
+	color : black;
+}
+
+div.Barra_navegacion {
+	height: 100px;
+}
+
+div.Barra_navegacion a.enlace:hover{
+	background-color: darkblue;
+}
+
+div.Zona_principal {
+
+}
+div.Zona_secundaria {
+	position: relative;
+	fill: 0.3em;
+	bottom: 0.7em;
+}
+
+div.Zona_secundaria a.enlace{
+	color: green;
+}
+
+
+div.Zona_enlaces {
+	width: 130px;
+}
+
+a.enlace {
+	color: blue;
+}
+
+a.enlace:hover {
+	color: green;
+}
+a.enlace::after{
+	color: blue
+}
+
+p {
+	position: relative;
+	top: 0.5em;
+}
+footer {
+	position: relative;
+}

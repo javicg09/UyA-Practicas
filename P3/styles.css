@@ -5,6 +5,7 @@ body {
 	color : black;
 }
 
+
 div.Barra_navegacion {
 	height: 100px;
 }
@@ -14,10 +15,17 @@ div.Barra_navegacion a.enlace:hover{
 }
 
 div.Zona_principal {
+	width: 400px;
+	height: 366px;	
+	font-size: medium;
 
 }
 div.Zona_secundaria {
-	position: relative;
+	font-size: medium;
+	top:127px;
+	position: absolute;
+	width: 190px;
+	left: 420px;
 	fill: 0.3em;
 	bottom: 0.7em;
 }
@@ -28,7 +36,12 @@ div.Zona_secundaria a.enlace{
 
 
 div.Zona_enlaces {
+	position:absolute;
+	font-size: medium;
+	top:127px;
 	width: 130px;
+	height: 367px;
+	right: 0px;
 }
 
 a.enlace {
@@ -47,5 +60,8 @@ p {
 	top: 0.5em;
 }
 footer {
-	position: relative;
+	position: fixed;
+	font-size: smaller;
+	left: 100px;
+	bottom: 10px;
 }

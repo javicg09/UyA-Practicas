@@ -1,5 +1,6 @@
-body {
+div.contenedor{
 	width: 770px;
+	margin: 0 auto;
 	font-family: Arial;
 	font-size: 1.5em;
 	color : black;
@@ -8,6 +9,7 @@ body {
 
 div.Barra_navegacion {
 	height: 100px;
+	background-image: url("./img/fondo.png")
 }
 
 div.Barra_navegacion a.enlace:hover{
@@ -15,33 +17,33 @@ div.Barra_navegacion a.enlace:hover{
 }
 
 div.Zona_principal {
-	width: 400px;
-	height: 366px;	
+	float: left; 
+	width: 400px; 	
 	font-size: medium;
-
 }
+div.Zona_principal table a.enlace {
+    color: green;  
+}
+div.Zona_principal img {
+    width: 100px;   
+    height: auto;  
+    margin: 0.5em 0; 
+}
+
 div.Zona_secundaria {
+	float: left; 
+	width: 220px;
 	font-size: medium;
-	top:127px;
-	position: absolute;
-	width: 190px;
-	left: 420px;
-	fill: 0.3em;
-	bottom: 0.7em;
+	margin-left: 10px;
 }
 
 div.Zona_secundaria a.enlace{
 	color: green;
 }
 
-
 div.Zona_enlaces {
-	position:absolute;
-	font-size: medium;
-	top:127px;
+	float: right; 
 	width: 130px;
-	height: 367px;
-	right: 0px;
 }
 
 a.enlace {
@@ -49,16 +51,17 @@ a.enlace {
 }
 
 a.enlace:hover {
-	color: green;
+	color: red;
 }
-a.enlace::after{
+
+a.enlace::visited{
 	color: blue
 }
 
 p {
-	position: relative;
-	top: 0.5em;
+	margin-top: 0.5em;
 }
+
 footer {
 	position: fixed;
 	font-size: smaller;

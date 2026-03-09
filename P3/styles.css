@@ -9,7 +9,7 @@ div.contenedor{
 
 div.Barra_navegacion {
 	height: 100px;
-	background-image: url("./img/fondo.png")
+	background-image: url("./img/cabecera.jpg")
 }
 
 div.Barra_navegacion a.enlace:hover{

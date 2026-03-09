@@ -54,7 +54,7 @@ a.enlace:hover {
 	color: red;
 }
 
-a.enlace::visited{
+a.enlace:visited{
 	color: blue
 }
 
@@ -67,4 +67,9 @@ footer {
 	font-size: smaller;
 	left: 100px;
 	bottom: 10px;
+}
+
+div.Barra_navegacion a.enlace {
+    padding: 0.3em;
+    margin-bottom: 0.7em;   
 }

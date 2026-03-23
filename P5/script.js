@@ -30,7 +30,7 @@ function calcularNoches(fechaEntrada, fechaSalida) {
 // 4. Función auxiliar: Calcular precio total
 function calcularPrecioTotal(noches) {
     const habitacion = document.getElementById('habitacion').value;
-    const huespedes = parseInt(document.getElementById('pasajeros').value) || 1;
+    const huespedes = parseInt(document.getElementById('clientes').value) || 1;
     const quiereDesayuno = document.getElementById('desayuno').checked;
     const quiereParking = document.getElementById('parking').checked;
     const codigoDescuento = document.getElementById('descuento').value.trim().toUpperCase();
@@ -87,7 +87,7 @@ form.addEventListener('submit', function(evento) {
     const salida = document.getElementById('fecha_fin').value;
     const habitacion = document.getElementById('habitacion').value;
     // Convertimos a número para poder hacer la validación matemática
-    const huespedes = parseInt(document.getElementById('pasajeros').value) || 1;
+    const huespedes = parseInt(document.getElementById('clientes').value) || 1;
 
     let errores = [];
 

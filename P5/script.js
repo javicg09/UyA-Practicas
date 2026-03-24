@@ -156,6 +156,14 @@ function crearResumen(nombre, email, entrada, salida, noches, habitacion, huespe
         `Descuento PROMO10: ${calculo.descuentoAplicado > 0 ? 'Aplicado (-' + calculo.descuentoAplicado.toFixed(2) + ' €)' : 'No aplicado'}`
     ];
 
+    const desayuno = document.getElementById('desayuno').checked;
+    const parking = document.getElementById('parking').checked;
+
+    datos.push(`Extras: ${
+        (desayuno ? 'Desayuno ' : '') +
+        (parking ? 'Parking' : '') || 'Ninguno'
+    }`);
+
     for (let i = 0; i < datos.length; i++) {
         const li = document.createElement('li');
         li.className = 'mb-2';
